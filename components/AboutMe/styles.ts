@@ -9,7 +9,7 @@ export const Container = styled.section`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: var(--max-width-text);
+  max-width: var(--max-width-container);
 
   h1 {
     font-weight: 800;
