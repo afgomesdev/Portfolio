@@ -10,7 +10,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 100px 50px 1fr;
-  min-height: 100vh;
+  min-height: calc(100vh - 121px);
   place-items: center;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
@@ -31,7 +31,7 @@ export const Container = styled.div`
   /* Lightsaber styling */
 
   .lightsaber {
-    margin-top: 25vh;
+    margin-top: 40vh;
     grid-column: 1 / -1;
     position: relative;
   }
