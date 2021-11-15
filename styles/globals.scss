@@ -1,0 +1,28 @@
+:root {
+  --max-width-text: 900px;
+
+  --clr-bgd: #09080c;
+  --clr-purple: hsl(250, 100%, 75%);
+  --clr-orange: #ff8a00;
+  --clr-orange2: #ffb053;
+  --clr-neon: hsl(317 100% 54%);
+  --clr-neon2: hsl(323 21% 16%);
+}
+
+html,
+body {
+  background-color: var(--clr-bgd);
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
