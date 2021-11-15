@@ -7,7 +7,7 @@ export function Footer(): JSX.Element {
     {
       id: 1,
       title: "Source",
-      link: "",
+      link: "https://github.com/afgomesdev/Portifolio",
       icon: <RiCodeLine />,
     },
     {
