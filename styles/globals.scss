@@ -1,5 +1,5 @@
 :root {
-  --max-width-text: 900px;
+  --max-width-container: 900px;
 
   --clr-bgd: #09080c;
   --clr-purple: hsl(250, 100%, 75%);
@@ -7,6 +7,9 @@
   --clr-orange2: #ffb053;
   --clr-neon: hsl(317 100% 54%);
   --clr-neon2: hsl(323 21% 16%);
+
+  --blade-hue: 120;
+  --blade-lightness: 50%;
 }
 
 html,
