@@ -2,12 +2,7 @@ import { useState } from "react";
 import { Container } from "./styles";
 
 export function Lighsaber(): JSX.Element {
-  const [greensaber, SetGreensaber] = useState(true);
-  const [bluesaber, SetBluesaber] = useState(false);
-  const [yellowsaber, SetYellowsaber] = useState(false);
-  const [purplesaber, SetPurplesaber] = useState(false);
-  const [redsaber, SetRedsaber] = useState(false);
-  const [darksaber, SetDarksaber] = useState(false);
+  const [lightsaber, SetLightsaber] = useState("green");
 
   return (
     <Container>
@@ -16,48 +11,48 @@ export function Lighsaber(): JSX.Element {
         type="radio"
         id="green"
         name="color"
-        checked={greensaber}
-        onChange={() => SetGreensaber(true)}
+        checked={lightsaber === "green"}
+        onChange={() => SetLightsaber("green")}
       />
       <label htmlFor="blue">Blue</label>
       <input
         type="radio"
         id="blue"
         name="color"
-        checked={bluesaber}
-        onChange={() => SetBluesaber(true)}
+        checked={lightsaber === "blue"}
+        onChange={() => SetLightsaber("blue")}
       />
       <label htmlFor="yellow">Yellow</label>
       <input
         type="radio"
         id="yellow"
         name="color"
-        checked={yellowsaber}
-        onChange={() => SetYellowsaber(true)}
+        checked={lightsaber === "yellow"}
+        onChange={() => SetLightsaber("yellow")}
       />
       <label htmlFor="purple">Purple</label>
       <input
         type="radio"
         id="purple"
         name="color"
-        checked={purplesaber}
-        onChange={() => SetPurplesaber(true)}
+        checked={lightsaber === "purple"}
+        onChange={() => SetLightsaber("purple")}
       />
       <label htmlFor="red">Red</label>
       <input
         type="radio"
         id="red"
         name="color"
-        checked={redsaber}
-        onChange={() => SetRedsaber(true)}
+        checked={lightsaber === "red"}
+        onChange={() => SetLightsaber("red")}
       />
       <label htmlFor="darksaber">Darksaber</label>
       <input
         type="radio"
         id="darksaber"
         name="color"
-        checked={darksaber}
-        onChange={() => SetDarksaber((prev) => !prev)}
+        checked={lightsaber === "dark"}
+        onChange={() => SetLightsaber("dark")}
       />
 
       <div className="lightsaber">
