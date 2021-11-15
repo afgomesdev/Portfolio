@@ -11,7 +11,7 @@ export function Menu(): JSX.Element {
     {
       id: 2,
       title: "Playground",
-      link: "/",
+      link: "/playground",
     },
   ];
   return (
