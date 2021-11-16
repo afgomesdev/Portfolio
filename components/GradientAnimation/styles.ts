@@ -7,9 +7,15 @@ export const Container = styled.section`
   min-height: 100vh;
   background-image: var(--gradient);
   background-size: 400%;
-  animation: bg-animation 20s infinite alternate;
+  animation: bg-animation 15s infinite alternate;
 
   h1 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     font-size: 5rem;
   }
 
