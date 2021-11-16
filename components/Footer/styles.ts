@@ -18,7 +18,7 @@ export const Content = styled.footer`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
-
+  padding: 1rem;
   a {
     &:hover,
     &:focus {

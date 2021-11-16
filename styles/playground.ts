@@ -9,4 +9,9 @@ export const Container = styled.main`
 
 export const Content = styled.div`
   max-width: var(max-width-container);
+
+  hr {
+    width: 100%;
+    color: white;
+  }
 `;
