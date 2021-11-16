@@ -3,14 +3,20 @@ import AboutMe from "../components/AboutMe";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import { Container } from "../styles/index";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <Container>
-      <Menu />
-      <AboutMe />
-      <Footer />
-    </Container>
+    <>
+      <Head>
+        <title>About</title>
+      </Head>
+      <Container>
+        <Menu />
+        <AboutMe />
+        <Footer />
+      </Container>
+    </>
   );
 };
 
