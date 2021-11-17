@@ -1,6 +1,11 @@
 import Image from "next/image";
+
+import { rgbDataURL } from "../../helpers/DataUrl";
+
 import { Container, Content, About, AboutSection } from "./styles";
+
 import myPic from "../../public/me.jpg";
+
 export function AboutMe(): JSX.Element {
   return (
     <Container>
@@ -14,6 +19,8 @@ export function AboutMe(): JSX.Element {
               height={433}
               width={336}
               quality={100}
+              placeholder="blur"
+              blurDataURL={rgbDataURL(22, 22, 22)}
               alt="My Pic"
             />
           </AboutSection>

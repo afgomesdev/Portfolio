@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+
+import { rgbDataURL } from "../../helpers/DataUrl";
+
 import { Container, Card, CardContent } from "./styles";
 
 export function CardAnimation(): JSX.Element {
@@ -13,6 +16,7 @@ export function CardAnimation(): JSX.Element {
           objectFit="cover"
           quality={100}
           placeholder="blur"
+          blurDataURL={rgbDataURL(55, 55, 55)}
         />
         <CardContent>
           <h2>Something awesome</h2>
