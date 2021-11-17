@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Container, Card, CardContent } from "./styles";
 
 export function CardAnimation(): JSX.Element {
@@ -11,6 +12,7 @@ export function CardAnimation(): JSX.Element {
           layout="fill"
           objectFit="cover"
           quality={100}
+          placeholder="blur"
         />
         <CardContent>
           <h2>Something awesome</h2>
@@ -18,9 +20,9 @@ export function CardAnimation(): JSX.Element {
             Lorem ipsum dolor sit amet consectrtiur addipisicing elit. Fugiat
             rem facilis.
           </p>
-          <a href="#" className="button">
-            Learn More
-          </a>
+          <Link href="#" passHref>
+            <a>Learn More</a>
+          </Link>
         </CardContent>
       </Card>
     </Container>
