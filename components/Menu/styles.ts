@@ -5,6 +5,9 @@ export const Container = styled.div`
   justify-content: center;
   color: var(--clr-orange);
 
+  @media (max-width: 499px) {
+    flex-direction: column;
+  }
   a {
     display: inline-block;
     position: relative;
@@ -23,19 +26,21 @@ export const Container = styled.div`
 
     transition: background-color 100ms linear;
 
-    &::before {
-      pointer-events: none;
-      content: "";
-      position: absolute;
-      background: var(--clr-orange);
-      top: 120%;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    @media (min-width: 500px) {
+      &::before {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        background: var(--clr-orange);
+        top: 120%;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
-      transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-      filter: blur(1em);
-      opacity: 0.7;
+        transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+        filter: blur(1em);
+        opacity: 0.7;
+      }
     }
 
     &:hover,
@@ -45,6 +50,7 @@ export const Container = styled.div`
       text-shadow: none;
     }
 
+    flex-direction: column;
     &::after {
       content: "";
       position: absolute;
@@ -52,7 +58,7 @@ export const Container = styled.div`
       bottom: 0;
       left: 0;
       right: 0;
-      box-shadow: 0 0 2em 1em var(--clr-orange);
+      box-shadow: 0 0 2em 0.2em var(--clr-orange);
       opacity: 0;
       transition: opacity 100ms linear;
     }
