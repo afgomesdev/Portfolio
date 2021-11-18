@@ -47,6 +47,23 @@ a {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.4rem grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff55;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-orange);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::after,
