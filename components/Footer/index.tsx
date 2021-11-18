@@ -3,7 +3,7 @@ import { RiGithubLine, RiLinkedinLine, RiCodeLine } from "react-icons/ri";
 import { Container, Content } from "./styles";
 
 export function Footer(): JSX.Element {
-  const chanels = [
+  const channels = [
     {
       id: 1,
       title: "Source",
@@ -26,11 +26,11 @@ export function Footer(): JSX.Element {
   return (
     <Container>
       <Content>
-        {chanels.map((chanel) => (
-          <Link href={chanel.link} key={chanel.id}>
+        {channels.map((channel) => (
+          <Link href={channel.link} key={channel.id}>
             <a>
               <span>
-                {chanel.title} {chanel.icon}
+                {channel.title} {channel.icon}
               </span>
             </a>
           </Link>

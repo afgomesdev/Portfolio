@@ -20,9 +20,12 @@ export const Content = styled.footer`
   gap: 3rem;
   padding: 1rem;
   a {
+    border: 1px solid var(--clr-bgd);
+    border-radius: 0.2rem;
+    padding: 0.2rem;
     &:hover,
     &:focus {
-      font-weight: 800;
+      border-color: #fff;
     }
 
     span {
@@ -30,10 +33,6 @@ export const Content = styled.footer`
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    svg {
-      display: none;
     }
 
     transition: font-weight 100ms linear, width 100ms linear;
