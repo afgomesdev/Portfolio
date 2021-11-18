@@ -2,21 +2,21 @@ import type { NextPage } from "next";
 import AboutMe from "../components/AboutMe";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
-import { Container } from "../styles/index";
+import { Container, Content } from "../styles/index";
 import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Container>
       <Head>
         <title>About</title>
       </Head>
-      <Container>
+      <Content>
         <Menu />
         <AboutMe />
         <Footer />
-      </Container>
-    </>
+      </Content>
+    </Container>
   );
 };
 
