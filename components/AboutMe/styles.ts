@@ -4,6 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 1rem;
 `;
 
 export const Content = styled.div`
@@ -36,6 +37,9 @@ export const About = styled.div`
   align-items: center;
   gap: 3rem;
   text-align: justify;
+  @media (max-width: 940px) {
+    flex-direction: column;
+  }
 `;
 
 export const AboutSection = styled.div`
