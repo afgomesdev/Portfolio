@@ -1,11 +1,11 @@
-import { Container, Wrapper, Circle, YinyangCircle } from "./styles";
+import { Container, Wrapper, Circle, YinYangCircle } from "./styles";
 export function YinYang(): JSX.Element {
   return (
     <Container>
       <Wrapper>
         <Circle>
-          <YinyangCircle />
-          <YinyangCircle />
+          <YinYangCircle />
+          <YinYangCircle />
         </Circle>
       </Wrapper>
     </Container>
