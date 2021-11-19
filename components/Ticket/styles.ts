@@ -19,8 +19,6 @@ export const Circle = styled.div`
 `;
 
 export const Content = styled.div`
-  transform-style: preserve-3d;
-  transform: rotateX(45deg);
   position: relative;
   border-radius: 0.5rem;
   padding: 256px 180px 1rem 420px;
