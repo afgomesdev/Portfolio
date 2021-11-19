@@ -23,17 +23,29 @@ export const Circle = styled.div`
   width: 200px;
   border-radius: 50%;
   padding-left: 50px;
-  background-image: linear-gradient(to left, #fff, #fff 50%, #000 50%, #000);
+  background-image: linear-gradient(
+    to left,
+    #fff,
+    #fff 50%,
+    var(--clr-bgd) 50%,
+    var(--clr-bgd)
+  );
   animation: roll 10s linear infinite;
 `;
 
-export const YinyangCircle = styled.div`
+export const YinYangCircle = styled.div`
   position: relative;
   background: #fff;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-image: linear-gradient(to left, #fff, #fff 50%, #000 50%, #000);
+  background-image: linear-gradient(
+    to left,
+    #fff,
+    #fff 50%,
+    var(--clr-bgd) 50%,
+    var(--clr-bgd)
+  );
   animation: roll 4s linear infinite;
   animation-direction: reverse;
 
@@ -42,7 +54,7 @@ export const YinyangCircle = styled.div`
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
     background: #fff;
     border: 18px solid #000;
     border-radius: 50%;
@@ -55,7 +67,7 @@ export const YinyangCircle = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
     background: #000;
     border: 18px solid #fff;
     border-radius: 50%;
