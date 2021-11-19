@@ -5,6 +5,7 @@ import Menu from "../../components/Menu";
 import { Container, Content } from "../../styles/playground";
 import Head from "next/head";
 import { CardAnimation } from "../../components/CardAnimation";
+import Ticket from "../../components/Ticket";
 export function Playground(): JSX.Element {
   return (
     <>
@@ -20,6 +21,7 @@ export function Playground(): JSX.Element {
           <hr />
           <CardAnimation />
           <hr />
+          <Ticket />
         </Content>
         <Footer />
       </Container>
