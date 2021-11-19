@@ -6,6 +6,7 @@ import { Container, Content } from "../../styles/playground";
 import Head from "next/head";
 import { CardAnimation } from "../../components/CardAnimation";
 import Ticket from "../../components/Ticket";
+import YinYang from "../../components/YinYang";
 
 export function Playground(): JSX.Element {
   return (
@@ -23,6 +24,8 @@ export function Playground(): JSX.Element {
           <CardAnimation />
           <hr />
           <Ticket />
+          <hr />
+          <YinYang />
         </Content>
         <Footer />
       </Container>
