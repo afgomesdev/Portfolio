@@ -1,4 +1,5 @@
 import { Container, Content, Circle } from "./styles";
+
 export function Ticket(): JSX.Element {
   return (
     <Container>
