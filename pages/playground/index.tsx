@@ -1,12 +1,14 @@
-import Footer from "../../components/Footer";
+import Head from "next/head";
+
+import { Container, Content } from "../../styles/playground";
+import Menu from "../../components/Menu";
+import Halloween from "../../components/CandyBay";
 import Lighsaber from "../../components/Lighsaber";
 import GradientAnimation from "../../components/GradientAnimation";
-import Menu from "../../components/Menu";
-import { Container, Content } from "../../styles/playground";
-import Head from "next/head";
 import { CardAnimation } from "../../components/CardAnimation";
 import Ticket from "../../components/Ticket";
 import YinYang from "../../components/YinYang";
+import Footer from "../../components/Footer";
 
 export function Playground(): JSX.Element {
   return (
@@ -17,6 +19,8 @@ export function Playground(): JSX.Element {
       <Container>
         <Menu />
         <Content>
+          <Halloween />
+          <hr />
           <Lighsaber />
           <hr />
           <GradientAnimation />
