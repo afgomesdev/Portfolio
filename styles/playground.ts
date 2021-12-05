@@ -8,6 +8,7 @@ export const Container = styled.main`
 `;
 
 export const Content = styled.div`
+  padding-top: 6rem;
   max-width: var(--max-width-container);
 
   hr {
