@@ -11,13 +11,13 @@ export function Footer(): JSX.Element {
       icon: <RiCodeLine />,
     },
     {
-      id: 1,
+      id: 2,
       title: "LikedIn",
       link: "https://linkedin.com/in/andre-felipe-benedetti-gomes-a282071b0",
       icon: <RiLinkedinLine />,
     },
     {
-      id: 1,
+      id: 3,
       title: "Github",
       link: "https://github.com/afgomesdev",
       icon: <RiGithubLine />,
