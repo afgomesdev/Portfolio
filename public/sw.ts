@@ -1,4 +1,5 @@
-self.addEventListener("push", function (event) {
+export {};
+self.addEventListener("push", function (event: any) {
   console.log("[Service Worker] Push Received.");
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 

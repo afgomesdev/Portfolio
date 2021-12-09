@@ -20,7 +20,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    "public/sw.js"
+    "public/sw.ts"
   ],
   "exclude": ["node_modules"]
 }

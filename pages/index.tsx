@@ -103,14 +103,14 @@ const Home: NextPage = () => {
         console.log("Service Worker and Push is supported");
 
         navigator.serviceWorker
-          .register("sw.js")
+          .register("sw.ts")
           .then(function (swReg) {
             console.log("Service Worker is registered", swReg);
             setSwRegistration(swReg);
             initializeUI();
           })
           .catch(function (error) {
-            console.error("Service Worker Error aqui", error);
+            console.error("Service Worker Error", error);
           });
       } else {
         console.warn("Push messaging is not supported");
