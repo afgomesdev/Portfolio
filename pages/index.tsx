@@ -110,7 +110,7 @@ const Home: NextPage = () => {
             initializeUI();
           })
           .catch(function (error) {
-            console.error("Service Worker Error", error);
+            console.error("Service Worker Error aqui", error);
           });
       } else {
         console.warn("Push messaging is not supported");
